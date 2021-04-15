@@ -3,22 +3,24 @@ package info.quantlab.numericalmethods.assignments.computerarithmetics.quadratic
 import info.quantlab.numericalmethods.lecture.computerarithmetics.quadraticequation.QuadraticEquation;
 import info.quantlab.numericalmethods.lecture.computerarithmetics.quadraticequation.QuadraticEquationFactory;
 
-public class QuadraticEquationAssignment {
+public class QuadraticEquationAssignment implements QuadraticEquationFactory {
 
 	/**
-	 * Return an instance of your implementation of the {@link QuadraticEquationFactory}
-	 * that allows to create an instance of your implementation of an {@link QuadraticEquation}.
+	 * Factory method creating an instance of an object
+	 * implementing QuadraticEquation with coefficients p
+	 * and q, representing the equation x^2 + p x + q.
 	 * 
-	 * @return
+	 * @param q The constant coefficient q in x^2 + p x + q.
+	 * @param p The linear coefficient p in x^2 + p x + q.
+	 * @return The object implementing QuadraticEquation.
 	 */
-	QuadraticEquationFactory getQuadraticEquationFactory() {
+	@Override
+	public QuadraticEquation createQuadraticEquation(double q, double p) {
 		/*
 		 * Replace the line below this comment with a construction of your implementation
-		 * of the QuadraticEquationFactory, then run the test
+		 * of the QuadraticEquation using the parameters q and p, then run the test
 		 * QuadraticEquationAssignmentTest (see src/test/java)
 		 */
 		throw new UnsupportedOperationException("Method not implemented.");
-		
 	}
-
 }
