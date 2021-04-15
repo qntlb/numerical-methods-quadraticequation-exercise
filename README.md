@@ -4,7 +4,12 @@ This exercise is related to computer arithmetic:
 
 ## Computer Arithmetic / Machine Precision (1): Quadratic Equation Solver
 
-1) Implement a class that implements the interface `QuadraticEquation` of the package `info.quantlab.numericalmethods.lecture.computerarithmetics`.
+1) Implement a class that implements the interface `QuadraticEquation` of the package `info.quantlab.numericalmethods.lecture.computerarithmetics.quadraticequation`.
+
+*Important*: The interface you have to implement is not part of this project. It is imported
+from another project that is referenced by this project. To have a look at this interface
+you can select "Open Declaration" in you IDE (right click on the interface name) or look here:
+ 
 
 This class should allow to solve the equation x^2 + p x + q = 0, finding the smallest root of this
 equation in a *numerically stable way*

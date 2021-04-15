@@ -12,26 +12,11 @@ public class QuadraticEquationAssignmentTest {
 
 	@Test
 	void test() {
-		QuadraticEquationAssignment solution = new QuadraticEquationAssignment();
+		QuadraticEquationFactory quadraticEquationFactory = new QuadraticEquationAssignment();
 
 		System.out.println("Checking the QuadraticEquationAssignment.");
 
-		boolean success = true;
-		
-		QuadraticEquationFactory quadraticEquationFactory = null;
-		try {
-			quadraticEquationFactory = solution.getQuadraticEquationFactory();
-		}
-		catch(Exception e) {
-			System.out.println("Could not create a QuadraticEquationFactory.");
-			System.out.println(e.getMessage());
-			success = false;
-		}
-		
-		if(quadraticEquationFactory != null) {
-			System.out.println("Testing " + QuadraticEquationAssignment.class.getCanonicalName());
-			success &= QuadraticEquationImplemenationChecker.check(quadraticEquationFactory);
-		}
+		boolean success = QuadraticEquationImplemenationChecker.check(quadraticEquationFactory);
 		
 		if(!success) {
 			System.out.println("Sorry, the test failed.");
