@@ -1,34 +1,14 @@
 {
   "tests": [
     {
-      "name": "Unit Tests - Testing your Application: DoubleVector - BasicFunctionality",
-      "setup": "",
-      "run": "bash -c \"set -o pipefail; mvn -q -B -Dtest=DoubleVectorFromArrayTest#testBasicFunctionality -Dorg.slf4j.simpleLogger.defaultLogLevel=ERROR test | grep -vF [ERROR]\"",
-      "input": "",
-      "output": "",
-      "comparison": "included",
-      "timeout": 10,
-      "points": 0.5
-    },
-    {
-      "name": "Unit Tests - Testing your Application: DoubleVector - Accuracy",
-      "setup": "",
-      "run": "bash -c \"set -o pipefail; mvn -q -B -Dtest=DoubleVectorFromArrayTest#testAccuracy -Dorg.slf4j.simpleLogger.defaultLogLevel=ERROR test | grep -vF [ERROR]\"",
-      "input": "",
-      "output": "",
-      "comparison": "included",
-      "timeout": 10,
-      "points": 0.5
-    },
-    {
       "name": "Unit Tests - Testing your Application: QuadraticEuation",
       "setup": "",
-      "run": "bash -c \"set -o pipefail; mvn -q -B -Dtest=QuadraticEuationFromCoefficientsTest -Dorg.slf4j.simpleLogger.defaultLogLevel=ERROR test | grep -vF [ERROR]\"",
+      "run": "bash -c \"set -o pipefail; mvn -q -B -Dtest=QuadraticEquationAssignmentTest -Dorg.slf4j.simpleLogger.defaultLogLevel=ERROR test | grep -vF [ERROR]\"",
       "input": "",
       "output": "",
       "comparison": "included",
       "timeout": 10,
-      "points": 1
+      "points": 4
     }
   ]
 }
