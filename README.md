@@ -20,13 +20,13 @@ such that it allows to create an object of the class you have implemented in 1).
 
 A class like `QuadraticEquationAssignment` is called a *Factory*, because it allows to create objects. It basically allows us to create an object of *your* class, without knowing the name of your class. We will use this method to test your implementation.
 
-*Hint*: This is a trivial task. If your class in 1) is named `MyQuadraticEquation` and if
-it has a constructor `MyQuadraticEquation(q,p)`, then body of the implementation of the factory class
+*Hint*: This is a trivial task. If your class in 1) is named `QuadraticEquationFromParameters` and if
+it has a constructor `QuadraticEquationFromParameters(q,p)`, then body of the implementation of the factory class
 is just
 
 ```
   public QuadraticEquation createQuadraticEquation(double q, double p) {
-    return new MyQuadraticEquation(q,p);
+    return new QuadraticEquationFromParameters(q,p);
   }
 ```
 
