@@ -5,7 +5,6 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
 import info.quantlab.numericalmethods.assignments.computerarithmetics.check.QuadraticEquationImplemenationChecker;
-import info.quantlab.numericalmethods.assignments.computerarithmetics.quadraticequation.QuadraticEquationAssignment;
 import info.quantlab.numericalmethods.lecture.computerarithmetics.quadraticequation.QuadraticEquationFactory;
 
 public class QuadraticEquationAssignmentTest {
