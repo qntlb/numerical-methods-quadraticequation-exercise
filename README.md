@@ -11,8 +11,9 @@ from another project that is referenced by this project. To have a look at this 
 you can select "Open Declaration" in your IDE (right click on the interface name) or look here:
 https://github.com/qntlb/numerical-methods-lecture/blob/master/src/main/java/info/quantlab/numericalmethods/lecture/computerarithmetics/quadraticequation/QuadraticEquation.java
 
-This class implementing `QuadraticEquation` should allow to solve the equation x^2 + p x + q = 0, finding the smallest root of this equation in a *numerically stable way*.
+The class implementing `QuadraticEquation` should allow to solve the equation x^2 + p x + q = 0, finding the smallest root of this equation in a *numerically stable way*.
 
+*Note*: As your task is to implement the interface, read the JavaDoc of that interface for a specification of what to do.
 
 2) When done with 1) implement the method `getQuadraticEquation` of the class `QuadraticEquationAssignment`,
 such that it allows to create an object of the class you have implemented in 1).
