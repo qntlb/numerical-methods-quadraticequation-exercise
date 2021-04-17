@@ -1,14 +1,24 @@
 {
   "tests": [
-    {
-      "name": "Unit Tests - Testing your Application: QuadraticEuation",
-      "setup": "",
-      "run": "bash -c \"set -o pipefail; mvn -q -B -Dtest=QuadraticEquationAssignmentTest -Dorg.slf4j.simpleLogger.defaultLogLevel=ERROR test | grep -vF [ERROR]\"",
-      "input": "",
-      "output": "",
-      "comparison": "included",
-      "timeout": 10,
-      "points": 4
-    }
+      {
+        "name": "Unit Tests - Testing your Application: QuadraticEuation",
+        "setup": "",
+        "run": "bash -c \"set -o pipefail; mvn -q -B -Dtest=QuadraticEquationAssignmentTest#testBasic -Dorg.slf4j.simpleLogger.defaultLogLevel=ERROR test | grep -vF [ERROR]\"",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 1
+      },
+      {
+        "name": "Unit Tests - Testing your Application: QuadraticEuation",
+        "setup": "",
+        "run": "bash -c \"set -o pipefail; mvn -q -B -Dtest=QuadraticEquationAssignmentTest#testStability -Dorg.slf4j.simpleLogger.defaultLogLevel=ERROR test | grep -vF [ERROR]\"",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 3
+      }
   ]
 }

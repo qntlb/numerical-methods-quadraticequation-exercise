@@ -10,18 +10,38 @@ import info.quantlab.numericalmethods.lecture.computerarithmetics.quadraticequat
 public class QuadraticEquationAssignmentTest {
 
 	@Test
-	void test() {
+	void testBasic() {
 		QuadraticEquationFactory quadraticEquationFactory = new QuadraticEquationAssignment();
 
-		System.out.println("Checking the QuadraticEquationAssignment.");
+		System.out.println("Testing basic functionality of " + quadraticEquationFactory.getClass().getCanonicalName());
 
-		boolean success = QuadraticEquationImplemenationChecker.check(quadraticEquationFactory);
+		boolean success = QuadraticEquationImplemenationChecker.check(quadraticEquationFactory, "basic");
 		
 		if(!success) {
 			System.out.println("Sorry, the test failed.");
 		}
 		else {
-			System.out.println("Congratulation! You solved the exercise.");
+			System.out.println("Congratulation! You solved the basic part of the exercise.");
+		}
+
+		System.out.println("_".repeat(79));
+
+		if(!success) fail();
+	}
+
+	@Test
+	void testStability() {
+		QuadraticEquationFactory quadraticEquationFactory = new QuadraticEquationAssignment();
+
+		System.out.println("Testing numerical stability of " + quadraticEquationFactory.getClass().getCanonicalName());
+
+		boolean success = QuadraticEquationImplemenationChecker.check(quadraticEquationFactory, "accuracy");
+		
+		if(!success) {
+			System.out.println("Sorry, the test failed.");
+		}
+		else {
+			System.out.println("Congratulation! You solved the accuracy part of the exercise.");
 		}
 
 		System.out.println("_".repeat(79));

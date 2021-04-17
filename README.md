@@ -7,8 +7,8 @@ This exercise is related to computer arithmetic:
 1) Implement a class that implements the interface `QuadraticEquation` of the package `info.quantlab.numericalmethods.lecture.computerarithmetics.quadraticequation`.
 
 *Important*: The interface you have to implement is not part of this project. It is imported
-from another project that is referenced by this project. To have a look at this interface
-you can select "Open Declaration" in your IDE (right click on the interface name) or look here:
+from another project that is referenced by this project. To have a look at this interface,
+you can select "Open Declaration" in your IDE (right-click on the interface name) or look here:
 https://github.com/qntlb/numerical-methods-lecture/blob/master/src/main/java/info/quantlab/numericalmethods/lecture/computerarithmetics/quadraticequation/QuadraticEquation.java
 
 The class implementing `QuadraticEquation` should allow to solve the equation x^2 + p x + q = 0, finding the smallest root of this equation in a *numerically stable way*.
@@ -18,10 +18,10 @@ The class implementing `QuadraticEquation` should allow to solve the equation x^
 2) When done with 1) implement the method `createQuadraticEquation` of the class `QuadraticEquationAssignment`,
 such that it allows to create an object of the class you have implemented in 1).
 
-A class like `QuadraticEquationAssignment` is called a *Factory*, because it allows to create objects. It basically allows us to create an object of *your* class, without knowing the name of your class. We will use this method to test your implementation.
+A class like `QuadraticEquationAssignment` is called a *Factory*, because it allows to create objects. It allows us to create an object of *your* class, without knowing the name of your class. We will use this method to test your implementation.
 
 *Hint*: This is a trivial task. If your class in 1) is named `QuadraticEquationFromParameters` and if
-it has a constructor `QuadraticEquationFromParameters(q,p)`, then body of the implementation of the factory class
+it has a constructor `QuadraticEquationFromParameters(q,p)`, then the body of the implementation of the factory class
 is just
 
 ```
