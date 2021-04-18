@@ -11,7 +11,7 @@ public class QuadraticEquationAssignmentTest {
 
 	@Test
 	void testBasic() {
-		QuadraticEquationFactory quadraticEquationFactory = new QuadraticEquationAssignment();
+		QuadraticEquationFactory quadraticEquationFactory = new QuadraticEquationAssignmentSolution();
 
 		System.out.println("Testing basic functionality of " + quadraticEquationFactory.getClass().getCanonicalName());
 
@@ -31,7 +31,7 @@ public class QuadraticEquationAssignmentTest {
 
 	@Test
 	void testStability() {
-		QuadraticEquationFactory quadraticEquationFactory = new QuadraticEquationAssignment();
+		QuadraticEquationFactory quadraticEquationFactory = new QuadraticEquationAssignmentSolution();
 
 		System.out.println("Testing numerical stability of " + quadraticEquationFactory.getClass().getCanonicalName());
 

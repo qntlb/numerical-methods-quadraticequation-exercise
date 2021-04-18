@@ -3,7 +3,7 @@ package info.quantlab.numericalmethods.assignments.computerarithmetics.quadratic
 import info.quantlab.numericalmethods.lecture.computerarithmetics.quadraticequation.QuadraticEquation;
 import info.quantlab.numericalmethods.lecture.computerarithmetics.quadraticequation.QuadraticEquationFactory;
 
-public class QuadraticEquationAssignment implements QuadraticEquationFactory {
+public class QuadraticEquationAssignmentSolution implements QuadraticEquationFactory {
 
 	/**
 	 * Factory method creating an instance of an object

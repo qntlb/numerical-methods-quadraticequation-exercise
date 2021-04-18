@@ -15,10 +15,10 @@ The class implementing `QuadraticEquation` should allow to solve the equation x^
 
 *Note*: As your task is to implement the interface, read the JavaDoc of that interface for a specification of what to do.
 
-2) When done with 1) implement the method `createQuadraticEquation` of the class `QuadraticEquationAssignment`,
+2) When done with 1) implement the method `createQuadraticEquation` of the class `QuadraticEquationAssignmentSolution`,
 such that it allows to create an object of the class you have implemented in 1).
 
-A class like `QuadraticEquationAssignment` is called a *Factory*, because it allows to create objects. It allows us to create an object of *your* class, without knowing the name of your class. We will use this method to test your implementation.
+A class like `QuadraticEquationAssignmentSolution` is called a *Factory*, because it allows to create objects. It allows us to create an object of *your* class, without knowing the name of your class. We will use this method to test your implementation.
 
 *Hint*: This is a trivial task. If your class in 1) is named `QuadraticEquationFromParameters` and if
 it has a constructor `QuadraticEquationFromParameters(q,p)`, then the body of the implementation of the factory class
