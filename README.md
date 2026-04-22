@@ -40,3 +40,86 @@ Depending on the value of the coefficients q and p of the quadratic equation,
 the well known formulas for the root of the quadratic equation may exhibit
 large *cancellation errors*.
 
+
+---
+
+
+## Importing in Eclipse from GitHub
+
+Import this git repository into Eclipse and start working.
+
+- Click on the link to your repository (the link starts with qntlb/computational-finance… )
+- Click on “Clone or download” and copy the URL to your clipboard.
+- Go to Eclipse and select File -> Import -> Git -> Projects from Git **(with smart import)**.
+- Select “Clone URI” and paste the GitHub URL from step 2.
+- Select “master” or "main", then Next -> Next -> Finish.
+
+Note: If you choose "Projects from Git" without the option "(with smart import)" you may experience that
+the project is not imported into Eclipse, but it was successfully *checked out* (downloaded) via git, i.e. you
+find the project files in your local git folder. In that case, you can import the project "as maven project"
+(see below).
+
+### Importing in Eclipse (as Maven Project)
+
+If you checked out the git repository manually (`git clone`), then import
+the local git folder as Maven Project;
+
+- File -> Import -> Maven -> Existing Maven Projects
+- Select the project folder in your *local* git folder.
+
+---
+
+
+## Notes
+
+The project is configured to run automated Unit Test, JavaDoc, and Checkstyle upon a git push (via GitHub Actions).
+
+### Code Style
+
+We are checking your codestyle via *Checkstyle*. A failing checkstyle run is not impacting your grade, but you could try to improve. If desired, you can run the check locally on a command line via the maven command
+
+```
+mvn checkstyle:check 
+```
+
+(run from the project directory).
+
+Checkstyle will report style issues of your code. If you like to clean up the formatting, you may use *Source -> Clean up...* in Eclipse.
+
+
+### JavaDoc
+
+We are generating documentation from the code via *JavaDoc*. A failing JavaDoc run is not impacting your grade, but you could try to improve your documentation.  If desired, you can generate the documentation locally on a command line via the maven command
+
+```
+mvn javadoc:javadoc 
+```
+
+If successful, the javadoc will then reside in `target/apidocs`. The project is configured to support
+LaTeX in JavaDocs (use `\(` and `\)` to open and close a math environment).
+
+Note that JavaDoc is HTML. This implies that an `<` needs to be written as `&lt;` and `>` needs to be written as `>`.
+
+
+---
+
+
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$','$'], ['\\(','\\)']],
+      processEscapes: true},
+      jax: ["input/TeX","input/MathML","input/AsciiMath","output/CommonHTML"],
+      extensions: ["tex2jax.js","mml2jax.js","asciimath2jax.js","MathMenu.js","MathZoom.js","AssistiveMML.js", "[Contrib]/a11y/accessibility-menu.js"],
+      TeX: {
+      extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"],
+      equationNumbers: {
+      autoNumber: "AMS"
+      }
+    }
+  });
+</script>
+
