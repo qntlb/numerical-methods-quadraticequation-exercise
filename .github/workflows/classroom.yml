@@ -134,7 +134,7 @@ jobs:
   
         # Fetch and print annotations
         echo "📋 Fetching annotations..."
-        RESULT=$(gh api "$ANNOTATIONS_URL" | jq -r '.[] | "**\(.message)**"')
+        RESULT=$(gh api "$ANNOTATIONS_URL" | jq -r '.[] | select(.message | test("Node\\.js 20 actions are deprecated") | not) | "**\(.message)**"')
 
         echo "### Autograding Summary: " >> $GITHUB_STEP_SUMMARY
         echo "$RESULT" >> $GITHUB_STEP_SUMMARY
