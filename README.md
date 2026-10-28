@@ -52,7 +52,7 @@ Import this git repository into Eclipse and start working.
 - Click on “Clone or download” and copy the URL to your clipboard.
 - Go to Eclipse and select File -> Import -> Git -> Projects from Git **(with smart import)**.
 - Select “Clone URI” and paste the GitHub URL from step 2.
-- Select “master” or "main", then Next -> Next -> Finish.
+- Select "main", then Next -> Next -> Finish.
 
 Note: If you choose "Projects from Git" without the option "(with smart import)" you may experience that
 the project is not imported into Eclipse, but it was successfully *checked out* (downloaded) via git, i.e. you
